@@ -1,0 +1,8 @@
+dependencies{
+    implementation project(":api")
+    implementation project(":entity")
+    implementation libs.hazelcast
+    implementation libs.activemq
+    implementation libs.mysql
+    implementation libs.findbugs
+}

@@ -1,0 +1,5 @@
+dependencies{
+    implementation project(":swagger")
+    implementation 'io.swagger:swagger-annotations:1.6.11'
+
+}

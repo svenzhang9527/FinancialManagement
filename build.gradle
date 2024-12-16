@@ -1,0 +1,40 @@
+group 'com.imooc'
+version '1.0-SNAPSHOT'
+
+apply from: "$rootDir/dependencies.gradle"
+
+repositories {
+    maven {
+        url "https://maven.aliyun.com/repository/public"
+    }
+    maven {
+        url "https://maven.aliyun.com/repository/central"
+    }
+    // 如果你需要额外的仓库，如 Spring 或 JCenter，也可以添加：
+    maven {
+        url "https://maven.aliyun.com/repository/spring"
+    }
+}
+
+
+subprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'war'
+
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+//        compile libs.common
+//        testCompile libs.test
+        implementation libs.common
+        testImplementation libs.test
+    }
+    [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+}

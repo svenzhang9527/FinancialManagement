@@ -1,0 +1,11 @@
+dependencies{
+    implementation project(":entity")
+    implementation project(":util")
+    implementation project(":swagger")
+    implementation project(":api")
+    implementation libs.activemq
+    implementation libs.mysql
+    implementation 'io.swagger:swagger-annotations:1.6.11'
+    implementation files("$rootDir/util/libs/jsonrpc4j-1.5.1.jar")
+
+}

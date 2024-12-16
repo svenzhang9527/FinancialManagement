@@ -1,0 +1,29 @@
+pluginManagement {
+    repositories {
+        maven {
+            url "https://maven.aliyun.com/repository/public"
+        }
+        mavenCentral()
+        gradlePluginPortal() // 如果需要使用 Gradle 插件
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        maven {
+            url "https://maven.aliyun.com/repository/public"
+        }
+        mavenCentral()
+    }
+}
+
+
+rootProject.name = 'financial'
+include 'util'
+include 'quartz'
+include 'swagger'
+include 'entity'
+include 'api'
+include 'manager'
+include 'seller'
+

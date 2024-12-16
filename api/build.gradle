@@ -1,0 +1,7 @@
+dependencies{
+    implementation project(":util")
+    implementation project(":entity")
+//    implementation 'com.github.briandilley.jsonrpc4j:jsonrpc4j:1.8.2'
+    implementation files("$rootDir/util/libs/jsonrpc4j-1.5.1.jar")
+
+}

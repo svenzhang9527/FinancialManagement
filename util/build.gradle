@@ -1,0 +1,6 @@
+dependencies {
+    implementation files("$rootDir/util/libs/jsonrpc4j-1.5.1.jar")
+    implementation libs.rsa
+//    implementation 'com.github.briandilley.jsonrpc4j:jsonrpc4j-spring-boot-starter:1.8.2' // 示例版本
+//    implementation 'com.github.briandilley.jsonrpc4j:jsonrpc4j:1.8.2'
+}
